@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #cfbdd9 !important;
+}
+
+/* Titulos */
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #464040;
+    position: fixed;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: #F7F7F7;
+    padding: 20px 30px;
+    
+    border-bottom: 0px hidden;
+}
+
+.titulo h1 {
+    font-family: Poppins;
+    margin: 0;
+}
+
+.subtitulo{
+    color: #73553D;
+    font-family: Poppins;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; 
+}
+/* Fim dos Titulos */
+
+/* Estante  */
+.estanteContainer{
+    margin-left: 19%;
+    border-radius: 14px;
+    background: #F7EEE4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 2px 30px 2px rgba(215, 181, 142, 0.40) inset, 0px 2px 100px 10px rgba(160, 71, 103, 0.15) inset;
+    height: auto;
+    width: 81%;
+    margin-top: 8%;
+    margin-right: 1%;
+}
+
+.books-container {
+    font-size: 28px;
+    margin-top: 5px;
+    color: #1d1414;
+    font-weight: 600;
+}
+.bookEstante {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    flex: 1 1 200px;
+    max-width: 15%;
+    margin-right: 2%;
+    box-shadow: -20px 0px 35px 0px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+    text-decoration: none;
+    outline: none;
+}
+
+.bookEstante img {
+    max-width: 100%;
+    height: 100%; 
+    object-fit: fill; 
+    border-radius: 5px;
+}
+
+
+
+.see-moreEstante {
+    text-decoration: none;
+    color: #464040;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.see-moreEstante:hover {
+    text-decoration: underline;
+}
+
+.retangulo{
+    border-radius: 10px;
+    background-color: black;
+    width: 99%;
+    height: 25px;
+    border-radius: 5px;
+    background: #F7EEE4;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 4px 10px 0px rgba(0, 0, 0, 0.10), 0px 0px 15px 0px #E7C1DB inset;
+    margin-left: 0.1%;
+    margin-right: 1%;
+}
+
+

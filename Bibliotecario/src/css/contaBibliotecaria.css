@@ -1,0 +1,579 @@
+/* 
+    *   @author Camila Inocencio
+    *   @version 1.0    
+    *   @file contaBibliotecaria.css
+    *   @description Folha de estilo para a tela contaBibliotecaria.php.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #464040;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: #F7F7F7;
+    padding: 20px 30px;
+    z-index: 2;
+    border-bottom: 0px hidden;
+}
+
+.titulo h1 {
+    font-family: Poppins;
+    margin: 0px;
+}
+
+.container-conta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: calc(100vh - 100px);
+    padding-top: 90px;
+    margin-left: 50px;
+    overflow: hidden;
+}
+
+.banner {
+    display: flex;
+    margin-top: -25%;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-tema {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Box de informações do aluno */
+.container-info {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+}
+
+.info-aluno {
+    background-color: #c3acd0ad;
+    position: absolute;
+    bottom: -315px;
+    left: 310px;
+    width: 22.2%;
+    box-shadow: 0 2px 35px rgba(0, 0, 0, 0.171);
+    border-radius: 50px 50px 0 0;
+}
+
+.aluno {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.fundo-img {
+    width: 100%;
+}
+
+.foto-aluno {
+    position: absolute;
+    top: -90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.foto-aluno-perfil {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 10px solid white;
+}
+
+.quem {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.quem h1, .quem h2 {
+    margin: 0;
+}
+
+.quem h1 {
+    font-size: 34px;
+    font-weight: 500;
+    color: #464040;
+}
+
+.quem h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #4e4040dc;
+}
+
+.info {
+    margin-top: 20px;
+    margin: 25px !important;
+}
+
+.cont-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 85px !important;
+    margin-bottom: 85px !important;
+}
+
+.cont-info .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px !important;
+}
+
+#s {
+    white-space: nowrap;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.row h4 {
+    font-size: 21px !important;
+}
+
+.row p {
+    font-size: 19px !important;
+    margin-left: -5px !important;
+}
+
+.spa {
+    margin-left: -80px !important;
+}
+
+.info-icon {
+    width: 36px !important;
+    height: auto;
+}
+
+.nuvem {
+    margin-bottom: -10px;
+}
+
+/* Parte de personalização */
+.persona {
+    top: 325px;
+    position: relative;
+}
+
+.persona .row {
+    margin-right: -750px;
+}
+
+.persona .col-6, .persona .col-4, .persona .col-10 {
+    border: 1px solid #414141;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.persona .col-6 {
+    margin-right: 20px;
+    width: 26.2% !important;
+    height: 100% !important;
+}
+
+.persona .col-4 {
+    width: 18.6% !important;
+    height: 100% !important;
+}
+
+.persona .col-10 {
+    margin-bottom: 20px;
+    width: 40% !important;
+}
+
+.tit {
+    margin-bottom: 10px;
+}
+
+.tit h3 {
+    text-align: center;
+    font-family: "Kalam", cursive;
+    font-size: 26px;
+    font-weight: 500;
+    color: #464040;
+}
+
+.tit h4 {
+    font-family: "Kalam", cursive;
+    font-size: 22px;
+    font-weight: 500;
+    color: #464040;
+}
+
+.persona .fotos {
+    background-color: #d8c9e076;
+    padding: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100% !important;
+}
+
+.persona .temas {
+    background-color: #d8c9e076;
+    padding: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 100% !important;
+}
+
+.persona .fotos img {
+    width: 152px;
+    height: auto;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.persona .temas img {
+    width: 152px;
+    height: auto;
+    border-radius: 15px;
+    padding: 2px;
+}
+
+.persona .livros img {
+    width: 90px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.opcoes .btns {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.btn-editar {
+    padding: 10px 20px;
+    border-radius: 10px 10px 0px 0px;
+    border: none;
+    cursor: pointer;
+    background-color: #a58db18d;
+    font-weight: 600;
+    color: #464040;
+}
+
+.btn-editar:hover {
+    background-color: #d8c9e09b;
+}
+
+.active-btn {
+    background-color: #d8c9e076;
+}
+
+.btn-icon {
+    width: 25px;
+    height: auto;
+    margin-left: 5px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    width: 85%;
+    outline: none !important;
+}
+
+.btn-salvar {
+    margin: 15px 0;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 18px;
+    padding: 10px;
+    border: 1px solid #464040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1f1c1c;
+    background-color: #C3ACD0;
+    width: 17% !important;
+    cursor: pointer;
+    outline: none !important;
+}
+
+.btn-salvar:focus,
+.btn-salvar:active,
+.btn-salvar:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.btn-salvar:hover {
+    color: #1f1c1c;
+    background-color: #ab8abe;
+    border: 1px solid #464040;
+}
+
+.d {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+hr {
+    margin-left: 37% !important;
+    margin-right: -20% !important;
+}
+
+/* Seleção de fotos/temas */
+.select {
+    border: 3px solid #4e4040dc;
+    border-radius: 15px;
+}
+
+.selected-theme {
+    border: 3px solid #4e4040dc;
+    border-radius: 15px;
+}
+
+.desabled {
+    background-color: #d1c6d7;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Media Screen */
+@media screen and (max-width: 1800px) {
+    .spa {
+        margin-left: -110px !important;
+    }
+
+    .persona .fotos img {
+        width: 152px;
+    }
+}
+
+@media screen and (max-width: 1700px) {
+    .spa {
+        margin-left: -110px !important;
+    }
+
+    .persona .fotos img {
+        width: 123px;
+    }
+
+    .persona .temas img {
+        width: 123px;
+    }
+
+    .row p {
+        font-size: 17px !important;
+        margin-left: -5px !important;
+    }    
+
+    .persona .col-6 {
+        margin-right: 15px;
+        width: 23% !important;
+        height: 100% !important;
+    }
+    
+    .persona .col-4 {
+        width: 16.6% !important;
+        height: 100% !important;
+    } 
+
+    .persona .row {
+        margin-right: -650px;
+    }  
+
+    .quem h1 {
+        font-size: 34px;
+    }
+    
+    .quem h2 {
+        font-size: 18px;
+    }
+
+    hr {
+        margin-left: 500px !important;
+    }
+
+    .foto-aluno-perfil {
+        width: 230px;
+        height: 230px;
+    }
+
+    .quem {
+        top: 150px;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .quem h1 {
+        font-size: 32px;
+    }
+    
+    .quem h2 {
+        font-size: 16px;
+    }
+
+    hr {
+        margin-left: 530px !important;
+    }
+
+    .foto-aluno-perfil {
+        width: 220px;
+        height: 220px;
+    }
+
+    .quem {
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .banner {
+        margin-top: -35%;
+    }
+
+    .foto-aluno-perfil {
+        width: 195px;
+        height: 195px;
+    }
+    
+    .quem {
+        top: 120px;
+    }
+
+    .info {
+        margin: 50px;
+    }
+
+    .row h4 {
+        font-size: 16px;
+    }
+
+    .row p {
+        margin-left: 15px;
+        font-size: 18px;
+    }
+    
+    .info-icon {
+        width: 32px !important;
+    }
+
+    .persona {
+        top: 22px !important;
+    }
+
+    .persona .fotos img {
+        width: 120px;
+    }
+    
+    .persona .livros img {
+        width: 90px;
+        height: 120px;
+    }
+
+    .tit h3 {
+        font-size: 30px;
+    }
+    
+    .tit h4 {
+        font-size: 26px;
+    }
+
+    .btn-editar {
+        font-size: 15px;
+    }
+
+    hr {
+        margin-left: 555px !important;
+        margin-bottom: -10px;
+    }
+
+    .persona .col-10 {
+        width: 38% !important;
+    }
+
+    .btn-salvar {     
+        font-size: 17px;
+        width: 13% !important;
+    }
+
+    .info-aluno {
+        bottom: -15px;
+    }
+    
+    .cont-info {
+        margin-top: 70px !important;
+        margin-bottom: 70px !important;
+    }
+
+    .col-4 h4 {
+        font-size: 18.5px !important;
+        margin-right: -10px !important;
+    }
+
+    .persona .col-6 {
+        margin-right: 15px;
+        width: 21.3% !important;
+        height: 100% !important;
+    }
+    
+    .persona .col-4 {
+        width: 15.5% !important;
+        height: 100% !important;
+    } 
+
+    .persona .fotos img {
+        width: 112px !important;
+    }
+
+    .persona .temas img {
+        width: 112px !important;
+    }
+
+    .btn-salvar {
+        margin: 10px 0;
+        margin-bottom: -8px;
+    }
+
+    .tit h3 {
+        font-size: 24px;
+    }
+
+    .container-info {
+        bottom: -130px;
+    }
+}

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #C4B9CA !important;
+}
+
+.titulo {
+    display: flex;
+    align-items: center;
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #464040;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: #F7F7F7;
+    padding: 20px 30px;
+    z-index: 2;
+    border-bottom: 0px hidden;
+}
+
+.voltar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin-right: 15px;
+}
+
+.titulo h1 {
+    font-family: Poppins;
+    margin: 0px;
+}
+
+.container-detalhes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 100px);
+    padding-top: 90px;
+    margin-left: 230px;
+}
+
+.background1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 90%;
+    background-color: #DFD6E4;
+}
+
+.background2 {
+    position: relative;
+    width: 95%;
+    height: 90%;
+    background-color: #F6EFF9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    overflow: visible;
+    z-index: 0;
+}
+
+.background3 {
+    position: absolute;
+    width: 85%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FBF9F7;
+    z-index: -1;
+}
+
+.container {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 35%;
+}
+
+.capa {
+    z-index: 1;
+    width: 23%;
+    height: auto;
+    margin-top: 20px;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.178);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 30px;
+    z-index: 1;
+}
+
+h2 {
+    margin-top: 22px;
+    font-size: 40px;
+    font-family: "Kalam", cursive;
+    color: #350070;
+    flex-wrap: wrap;
+}
+
+h3 {
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: 21px;
+}
+
+p {
+    margin-top: 5px;
+    color: #513A6C;
+}
+
+.btns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.fila, .dispo, .renovar {
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 18px;
+    padding: 16px;
+    border: 1px solid #464040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fila {
+    color: #1f1c1c;
+    background-color: #C3ACD0;
+    width: 42%;
+}
+
+.fila:hover {
+    color: #1f1c1c;
+    background-color: #ab8abe;
+    border: 1px solid #464040;
+}
+
+.renovar {
+    color: #1f1c1c;
+    background-color: #C3ACD0;
+    width: 36%;
+}
+
+.renovar:hover {
+    color: #1f1c1c;
+    background-color: #ab8abe;
+    border: 1px solid #464040;
+}
+
+.indisponivel {
+    color: #1f1c1c;
+    background-color: #C6C6C6;
+    width: 40%;
+    cursor: none !important;
+}
+
+.indisponivel:hover {
+    color: #1f1c1c;
+    background-color: #afafaf;
+    border: 1px solid #464040;
+}
+
+.disponivel {
+    color: #1f1c1c;
+    background-color: #A0EB55;
+    width: 40%;
+    cursor: none !important;
+}
+
+.disponivel:hover {
+    color: #1f1c1c;
+    background-color: #98db55;
+    border: 1px solid #464040;
+}
+
+.posse {
+    color: #1f1c1c;
+    background-color: #EBD355;
+    width: 35%;
+    cursor: none !important;
+}
+
+.posse:hover {
+    color: #1f1c1c;
+    background-color: #ebbc55;
+    border: 1px solid #464040;
+}
+
+.atraso {
+    color: #1f1c1c;
+    background-color: #DE6767;
+    width: 35%;
+    cursor: none !important;
+}
+
+.atraso:hover {
+    color: #1f1c1c;
+    background-color: #c75f5f;
+    border: 1px solid #464040;
+}
+
+.row {
+    margin-bottom: 15px;
+}
+
+.esp {
+    margin-left: 18px;
+}
+
+/* modal style */
+#titRenovar, #prazoFila{
+    font-weight: 500;
+}
+
+#titRenovar {
+    margin-bottom: 8px;
+}
+
+#prazoFila {
+    margin-bottom: 20px;
+    background-color: #C3ACD0;
+    padding: 12px;
+    border-radius: 15px;
+}
+
+#titRenovar span {
+    color: #81689D;
+}
+
+.modal-custom {
+    max-width: 35%;
+    height: auto;
+}
+
+.modal-content {
+    padding: 45px;
+    border-radius: 40px;
+}
+
+.ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #90C666;
+    border: 1px solid #464040;
+}
+.ok:hover {
+    background-color: #85b362;
+}
+
+.naoRenovar {
+    display: flex;
+    justify-content: center;
+}
+
+.nao-ok {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #E4827C;
+    border: 1px solid #464040;
+    margin-top: 15px;
+}
+.nao-ok:hover {
+    background-color: #cc6e69;
+}
+
+/* Media Screen */
+@media screen and (min-height: 780px) {
+    h3 {
+        margin-top: 26px;
+    }
+
+    .background3 {
+        top: 46%;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .btn {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1340px) {
+    .btn {
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+    
+    h3 {
+        margin-top: 12px;
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .btn {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 34px;
+    }
+    
+    h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 14px;
+    }
+
+    .background3 {
+        height: 190%;
+        width: 90%;
+    }
+}

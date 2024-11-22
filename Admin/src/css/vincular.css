@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.fundo {
+    background-color: #C4B9CA;
+}
+
+.titulo {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #464040;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    width: calc(100% - 230px);
+    background-color: #F7F7F7;
+    padding: 20px 30px;
+    z-index: 5;
+    border-bottom: 0px hidden;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    font-family: Poppins;
+    margin: 0px;
+}
+
+.box-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 230px;
+    width: calc(100% - 230px);
+    padding-top: 30px;
+}
+
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 85%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    background-color: #DFD6E4;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.spacer {
+    height: 100px;
+    width: 100%;
+    background-color: transparent;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.row {
+    width: 100%;
+}
+
+.dados {
+    height: 60%;
+}
+
+.info-emprest {
+    width: 92%;
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.emprest {
+    background-color: #F9F9F9;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.dados-aluno {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -15px;
+}
+
+.title {
+    background-color: #F5F5F5;
+    width: 55%;
+    padding: 10px 10px 5px 10px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+.dados-aluno h2 {
+    font-family: "Kalam", cursive;
+    color: #464040;
+    font-size: 30px;
+    text-align: center;
+}
+
+.carteirinha {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    margin-right: 15px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.image {
+    width: 180%;
+    height: auto;
+}
+
+.g-4 {
+    margin-left: 25px;
+}
+
+.top {
+    margin-top: 36px;
+}
+
+.color {
+    flex: 1;
+    background-color: #BFA5CE;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
+}
+
+.info-livro {
+    width: 100%;
+    height: auto;
+    background-color: #F5F5F5;
+    margin-right: 15px;
+    border-radius: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+input {
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.295);
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(163, 51, 255, 0.25);
+}
+
+.esp {
+    margin-left: 8px;
+}
+
+.esp-top {
+    margin-top: 10px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn-icon {
+    width: 20px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.cancelar, .vincular {
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #464040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cancelar {
+    color: #464040;
+    background-color: #eeeeee;
+    width: 16%;
+}
+
+.cancelar:hover {
+    color: #464040;
+    background-color: #d4d4d4;
+    border: 1px solid #464040;
+}
+
+.vincular {
+    color: #1f1c1c;
+    background-color: #C3ACD0;
+    width: 15%;
+}
+
+.vincular:hover {
+    color: #1f1c1c;
+    background-color: #ab8abe;
+    border: 1px solid #464040;
+}
+
+/* Media Screen */
+@media screen and (max-width: 1400px) {
+    .btn {
+        font-size: 15px;
+    }
+
+    .dados-aluno h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .btn {
+        font-size: 13px;
+    }
+
+    .dados-aluno h2 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .image {
+        width: 160%;
+    }
+}
+
+@media screen and (min-width: 1740px) {
+    .image {
+        width: 140%;
+    }
+}

@@ -1,0 +1,78 @@
+<!-- 
+    /*
+    *   @author Matheus Cuero
+    *   @version 1.0    
+    *   @file login_pai.html
+    *   @description Arquivo PHP login principal.
+    *   Essa página HTML serve como menu principal de login do Dracotheca, onde o usuário pode escolher entre três tipos de acesso: Aluno, Bibliotecário ou Administrador.
+    */ 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dracotheca</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/Login_pai.css">
+</head>
+
+<body>
+    <h1 class="dracotheca1" id="dragon">Dracotheca</h1>
+    <main>
+        <header>
+            <h1 class="dracotheca">Dracotheca</h1>
+        </header>
+        <a href="../index.php">
+            <button class="back"><i class="fas fa-chevron-left"></i></button>
+        </a>
+        <section class="welcome-section">
+            <h2>Seja bem vindo!</h2>
+            <p>Você deseja entrar como Aluno ou Bibliotecário?</p>
+            <a href="./login_alun.php">
+                <button class="student-button">Sou Aluno</button>
+            </a>
+            <a href="./login_bibliot.php">
+                <button class="librarian-button">Sou Bibliotecário</button>
+            </a>
+            <a href="./login_adm.php">
+                <button class="adm-button">Sou Administrador</button>
+            </a>
+            <!-- <div class="request-access">
+                <p>não tem uma conta?</p>
+                <button class="email-access-button">
+                    peça acesso pelo email
+                </button>
+            </div> -->
+        </section>
+        <footer>
+            <p class="blue">Fatec Sorocaba</p>
+            <p>Uma realização: 3ºDS turma 2024</p>
+        </footer>
+    </main>
+</body>
+
+</html>
+
+<script>
+    // /*
+        //     *   Ajusta dinamicamente a visibilidade de um elemento com o ID dragon com base na largura da janela do navegador.
+    // */ 
+    function a() {
+    var width = window.innerWidth;
+    var x = document.getElementById("dragon");
+
+    if (width < 760) {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+console.log(window.innerWidth);
+
+window.onload = a;
+window.onresize = a;
+</script>
