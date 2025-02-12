@@ -1,0 +1,254 @@
+<!-- 
+    /*
+    *   @author Matheus Cuero
+    *   @version 1.0    
+    *   @file login_pai.html
+    *   @description Arquivo PHP login principal.
+    *   Essa página HTML serve como menu principal de login do Dracotheca, onde o usuário pode escolher entre três tipos de acesso: Aluno, Bibliotecário ou Administrador.
+    */ 
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dracotheca</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../src/css/Login_pai.css">
+
+    <style>
+        /* Selo Dracotheca */
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px; 
+            width: 90%;
+        }
+
+        .welcome-section {
+            flex: 1;
+        }
+
+        .side-image {
+            width: 600px;
+            height: auto;
+            margin-left: 100px;
+        }
+        
+        @media screen and (max-width: 1500px) {
+            .side-image {
+                width: 550px;
+                height: auto;
+                margin-left: 50px;
+            }
+        }
+
+        @media screen and (max-width: 1330px) {
+            .side-image {
+                width: 500px;
+                height: auto;
+                margin-left: 20px;
+            }
+        }
+
+        @media screen and (max-width: 1230px) {
+            .side-image {
+                width: 450px;
+                height: auto;
+                margin-left: 20px;
+            }
+
+            .welcome-section h2 {
+                font-size: 1.6em;
+            }
+
+            .welcome-section p {
+                font-size: 1em;
+            }
+        }
+
+        @media screen and (max-width: 1130px) {
+            .side-image {
+                width: 400px;
+                height: auto;
+                margin-left: 20px;
+            }
+
+            .back{
+                right: 7.5em;
+                bottom: 5em;
+                font-size: 1.2em !important;
+            }
+
+            button {
+                width: 220px;
+            }
+
+            .welcome-section h2 {
+                font-size: 1.7em;
+            }
+        }
+
+        @media screen and (max-width: 1030px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            main {
+                margin-top: 20px;
+                margin-bottom: 30px;
+                width: 60%;
+            }
+
+            .side-image {
+                margin-left: 5%;
+                margin-top: 60%;
+            }
+
+            .back{
+                right: 9em;
+                bottom: 4.8em;
+            }
+
+            button {
+                width: 300px;
+            }
+
+            .welcome-section h2 {
+                font-size: 1.8em;
+            }
+
+            .dracotheca {
+                font-size: 2.2em;
+            }
+        }
+
+        @media screen and (max-width: 1030px) {
+            .side-image {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 770px) {
+            .side-image {
+                margin-top: 80%;
+                margin-left: 2%;
+            }
+        }
+
+        @media screen and (max-width: 660px) {
+            .side-image {
+                margin-top: 100%;
+                margin-left: 1%;
+            }
+
+            .back{
+                right: 7.5em;
+                bottom: 5em;
+            }
+
+            .dracotheca {
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (max-width: 540px) {
+            .side-image {
+                width: 200px;
+                margin-top: 95%;
+                margin-left: 1%;
+            }
+
+            .back{
+                right: 6.5em;
+                bottom: 5.5em;
+            }
+
+            .dracotheca {
+                font-size: 1.7em;
+            }
+
+            main {
+                width: 70%;
+            }
+        }
+
+        @media screen and (max-width: 460px) {
+            .side-image {
+                width: 200px;
+                margin-top: 110%;
+                margin-left: 1%;
+            }
+
+            main {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 390px) {
+            button {
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="dracotheca1" id="dragon">Dracotheca</h1>
+    <div class="container">
+        <img src="../src/img/selo-dracotheca.png" alt="Selo Dracotheca" class="side-image">
+        <main>
+            <header>
+                <h1 class="dracotheca">Dracotheca</h1>
+            </header>
+            <a href="../index.php">
+                <button class="back"><i class="fas fa-chevron-left"></i></button>
+            </a>
+            <section class="welcome-section">
+                <h2>Seja bem-vindo!</h2>
+                <p id="parag">Você deseja entrar como Aluno ou Bibliotecário?</p>
+                <a href="./login_alun.php">
+                    <button class="student-button">Sou Aluno</button>
+                </a>
+                <a href="./login_bibliot.php">
+                    <button class="librarian-button">Sou Bibliotecário</button>
+                </a>
+                <a href="./login_adm.php">
+                    <button class="adm-button">Sou Administrador</button>
+                </a>
+            </section>     
+            <footer>
+                <p class="blue">Fatec Sorocaba</p>
+                <p>Uma realização: 3ºDS turma 2024</p>
+            </footer>
+        </main>
+    </div>   
+</body>
+
+</html>
+
+<script>
+    // /*
+        //     *   Ajusta dinamicamente a visibilidade de um elemento com o ID dragon com base na largura da janela do navegador.
+    // */ 
+    function a() {
+    var width = window.innerWidth;
+    var x = document.getElementById("dragon");
+
+    if (width < 100) {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+console.log(window.innerWidth);
+
+window.onload = a;
+window.onresize = a;
+</script>

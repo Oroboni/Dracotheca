@@ -1,0 +1,178 @@
+/* 
+    *   @author Matheus Cuero
+    *   @version 1.0    
+    *   @file Login_adm.css
+    *   @description Folha de estilo para a tela Login_adm.php.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #f9f9f9;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dracotheca {
+    font-family: "Homemade Apple", cursive !important;
+    font-size: 2em;
+    height: 15vh;
+    color: #333;
+    font-family: 'Brush Script MT', cursive;
+}
+
+
+.dracotheca1 {
+    font-family: "Homemade Apple", cursive !important;
+    font-size: 2em;
+    height: 15vh;
+    color: #333;
+    font-family: 'Brush Script MT', cursive;
+    text-shadow: 15px 10px #9BB0C1;
+    position: absolute;
+    bottom: 80% !important;
+    left: 1%;
+}
+
+
+main {
+    background: #E6E6E6;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        align-items: center;
+    }
+
+    main {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 10%; /* Adiciona um espaço inferior para evitar que encoste no rodapé */
+    }
+
+    .welcome-section {
+        width: 100%;
+        box-shadow: none;
+    }
+}
+
+p {
+    font-size: 18px !important;
+}
+
+a {
+    text-decoration: none;
+  }
+
+.back{
+    position: absolute;
+    width: 2em;
+    font-size: 1.5em !important;
+    background-color: #ffffff00;
+}
+
+.welcome-section {
+    text-align: center;
+    height: 35em;
+    width: 24.8em;
+    box-shadow: 22em  #333;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 18%;
+    position: relative;
+    margin-bottom: 3%;
+}
+.welcome-section h2 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.welcome-section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+
+.tamanho{
+    margin-top: 3em;
+}
+
+button {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+
+.student-button {
+    background-color: #000000;
+    color: #fff;
+}
+
+.librarian-button {
+    background-color: #000;
+    color: #fff;
+}
+
+.email-access-button {
+    background-color: #ccc;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.request-access p {
+    margin: 10px 0;
+    font-size: 0.75em !important;
+    color: #888;
+}
+
+.request-access p::before,
+.request-access p::after {
+    display: inline-block;
+    content: "";
+    border: 0.3px solid rgba(0, 0, 0, 0.11);
+    width: 4rem;
+    margin: 0 0.8rem;
+    transform: translateY(-0.19rem);
+}
+
+footer {
+    font-family: "IBM Plex Mono", monospace !important;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+footer p {
+    color: #888;
+    margin: 5px 0;
+}
+
+.blue {
+    color: #4D799D;
+}

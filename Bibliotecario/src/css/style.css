@@ -1,0 +1,490 @@
+/* 
+    *   @author Camila Inocencio
+    *   @version 1.0    
+    *   @file style.css
+    *   @description Folha de estilo para telas no geral.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+main.content {
+    flex-grow: 1;
+    margin-left: 230px;
+    padding: 20px;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: "Kalam", cursive;
+    font-weight: 400;
+    color: #464040;
+}
+
+/* título */
+.welcome {
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    color: #81689D;
+    font-family: "Kalam", cursive;
+}
+
+.icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+    margin-right: -10px;
+    vertical-align: middle;
+}
+/* título */
+
+/* sidebar - início */
+#sidebar {
+    position: fixed;
+    margin: 0;
+    width: 230px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-right: 1px solid #E0E0E0;
+    z-index: 1000;
+}
+
+#sidebar_content {
+    padding: 14px;
+}
+
+#user {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 15px;
+}
+
+#user_avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.sidebar-title {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 8px;
+}
+
+#side_itens {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    list-style: none;
+}
+
+.side-item {
+    border-radius: 10px;
+    padding: 9px;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+.side-item.selected {
+    background-color: #C3ACD0;
+}
+
+.side-item:hover:not(.selected) {
+    background-color: #f7f7f7;
+}
+
+.side-item a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #0a0a0a;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Inter", sans-serif;
+}
+
+.side-item a img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+}
+
+.side-item-title {
+    font-family: "Inter", sans-serif;
+    font-size: 19px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.segundo {
+    margin-top: 30px;
+}
+/* sidebar - fim */
+
+/* search - início */
+.search {
+    display: flex;
+    margin-top: 6.5vh;
+    position: fixed;
+    right: -500px;
+    width: 565px;
+    transition: transform 0.5s ease;
+}
+
+.box-search {
+    background-color: #ffffff;
+    width: 500px;
+    height: 95vh;
+    border: 1px solid #0a0a0a82;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    overflow-y: auto;
+}
+
+#open_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 50px;
+    background-color: #81689D;
+    border: none;
+    cursor: pointer;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: relative;
+    transition: transform 0.5s ease;
+}
+
+/* para mudar o ícone da sidebar de pesquisa */
+#open_btn_icon {
+    font-size: 20px; 
+    color: #ffffff;
+}
+
+.search .box-search:not(.hidden) + #open_btn #open_btn_icon.fa-magnifying-glass {
+    display: none;
+}
+
+.search .box-search:not(.hidden) + #open_btn #open_btn_icon.fa-angle-right {
+    display: block;
+}
+
+.search.active {
+    transform: translateX(-500px);
+}
+
+.search.active .box-search {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* search - in - início */
+.search-bar{
+    background-color: #f7f7f7;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    border: 1px solid #0a0a0a82;
+    border-radius: 40px;
+    box-shadow: 0 3px 6px rgba(69, 10, 71, 0.44);
+}
+
+#search-input{
+    background-color: #f7f7f7;
+    margin-left: 25px;
+    font-size: 18px;
+    border: none;
+    width: 80%;
+    padding: 15px;
+    outline: none;
+}
+
+#search-button{
+    background-color: #f7f7f7;
+    cursor: pointer;
+    font-size: 20px;
+    color: #0a0a0a93;
+    outline: none;
+    border: none;
+}
+
+/* filtros */
+.btn-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.filter-aplic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7f7;
+    width: 35%;
+    height: 45px;
+    border-radius: 8px;
+    font-size: 16px;
+    border: 1px solid #615F6D;
+    color: #615F6D;
+    cursor: pointer;
+}
+
+.filter-aplic img {
+    margin-left: 8px;
+    width: 20px;
+    height: 20px;
+}
+
+/* botão desabilitado */
+#apply-filters-button:disabled {
+    background-color: #f7f7f7;
+    border: 1px solid #d3d3d3;
+    color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+/* botão ativo */
+#apply-filters-button.active {
+    background-color: #B784B7;
+    color: #ffffff;
+    box-shadow: 0 3px 6px rgba(69, 10, 71, 0.44);
+    border: 1px solid #B784B7;
+    cursor: pointer;
+}
+
+.filter {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.filter-header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.filter-header i {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.title-filter{
+    margin-left: 6%;
+}
+
+.icon-filter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EEEEEE;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+}
+
+.filter-options {
+    display: none;
+    padding: 8px;
+}
+
+.filter-options label {
+    display: block;
+    padding: 12px;
+    background-color: #C3ACD0;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-bottom: -18px;
+}
+
+.filter-options label.last-radio {
+    margin-bottom: 5px !important;
+}
+
+.filter-options input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.filter-options input[type="radio"]:checked + label {
+    background-color: #B784B7;
+}
+
+.filter-options label::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+/* search - in - fim */
+
+/* search - fim */
+
+
+/* main - livros - início */
+.books-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.books-container h2 {
+    font-size: 28px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    color: #1d1414;
+    font-weight: 600;
+}
+
+.section {
+    padding: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: calc(115% - 250px);
+}
+
+.section-header h2 {
+    margin: 0;
+}
+
+.see-more {
+    text-decoration: none;
+    color: #81689D;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.see-more:hover {
+    text-decoration: underline;
+}
+
+.books-row {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.book {
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    flex: 1 1 200px;
+    max-width: 160px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-decoration: none;
+    outline: none;
+}
+
+.book img {
+    width: 100%;
+    height: 80%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.book p {
+    font-size: 18px;
+    color: #464040;
+    margin: 0;
+}
+
+.last {
+    filter: blur(2px);
+}
+
+/* Responsividade */
+
+/* na main */
+@media (min-width: 1525px) {
+    .book {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #ffffff;
+        flex: 1 1 200px;
+        max-width: 220px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 788px) {
+    .books-container {
+        padding: 10px;
+    }
+
+    .section {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .books-row {
+        gap: 16px;
+    }
+
+    .book {
+        flex: 1 1 calc(50% - 16px);
+        max-width: calc(50% - 16px);
+    }
+}
+
+/* em telas muito pequenas, como telefones */
+@media (max-width: 480px) {
+    .books-row {
+        gap: 12px;
+    }
+
+    .book {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
